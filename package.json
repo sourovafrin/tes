@@ -1,0 +1,33 @@
+{
+  "name": "bdcommunity-discord-bot",
+  "version": "1.0.0",
+  "description": "A discord bot for STEEM.com.bd",
+  "main": "bot.js",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "bitly": "^5.0.12",
+    "bluebird": "^3.5.1",
+    "discord.js": "^11.3.2",
+    "discord.js-commando": "^0.10.0",
+    "dotenv": "^5.0.1",
+    "dsteem": "^0.8.7",
+    "nanoid": "^1.0.2",
+    "sc2-sdk": "^1.0.2",
+    "sqlite": "^2.9.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.11.0",
+    "nodemon": "^1.17.4"
+  },
+  "scripts": {
+    "start": "nodemon src/bot.js --exec babel-node",
+    "build": "babel src -s -d dist",
+    "serve": "node dist/bot.js"
+  },
+  "author": "Reazul Iqbal",
+  "license": "MIT"
+}
